@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Email generator</title>
+  </head>
+  <body>
+  	<pre class="email"></pre>
+	<script type="module">
+		import {createEmail} from './lib/email_no_test.js';
+		const user = {
+			name: "John",
+			lastName: "Doe",
+			gender: "male"
+		};
+
+		document.querySelector('.email').innerHTML = createEmail(user, 23432, 'Mark Smith');
+	</script>
+  </body>
+</html>
+
+

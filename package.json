@@ -1,0 +1,34 @@
+{
+  "name": "testing101",
+  "version": "1.0.0",
+  "description": "testing 101",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanguino/testing101.git"
+  },
+  "keywords": [
+    "testing",
+    "js",
+    "101"
+  ],
+  "author": "Miguel G. Sanguino <sanguino@me.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanguino/testing101/issues"
+  },
+  "homepage": "https://github.com/sanguino/testing101#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "http-server ."
+  }
+}
