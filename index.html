@@ -8,14 +8,21 @@
   <body>
   	<pre class="email"></pre>
 	<script type="module">
-		import {createEmail} from './lib/email_no_test.js';
-		const user = {
+
+		import {createEmail, setUser, setAgent, setBalance} from './lib/email_no_test.js';
+		
+		setUser({
 			name: "John",
 			lastName: "Doe",
 			gender: "male"
-		};
+		});
 
-		document.querySelector('.email').innerHTML = createEmail(user, 23432, 'Mark Smith');
+		setBalance(2342);
+
+		setAgent('Mark Smith');
+
+		document.querySelector('.email').innerHTML = createEmail();
+		
 	</script>
   </body>
 </html>
